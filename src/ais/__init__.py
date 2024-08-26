@@ -1,1 +1,1 @@
-from ._script import testing
+from ._artificial_neuron import Neuron
