@@ -1,15 +1,12 @@
 import numpy as np
 from ai import Neuron
 from matplotlib import pyplot as plt
-import random
 
-def test_simple():
-    slope = random.random()
-    y_intercept = random.random()
+def y_values(x_values: list[int]):
+    slope = 0.5
+    y_intercept = 0.5
     NEURON = Neuron(slope, y_intercept)
-    x_values = [0, 1]
-    y_values = np.array([NEURON.y(x) for x in x_values])
-    show(x_values, y_values)
+    return np.array([NEURON.y(x) for x in x_values])
 
 def show(x_values, y_values):
     plt.plot(x_values, y_values, "r")
@@ -20,4 +17,6 @@ def show(x_values, y_values):
     plt.show()
 
 if __name__ == "__main__":
-    test_simple()
+    X_VALUES = [0, 10]
+    Y_VALUES = y_values(X_VALUES)
+    show(X_VALUES, Y_VALUES)

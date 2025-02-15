@@ -1,5 +1,4 @@
-from ai._internals._neuron import Neuron
-from ai.model import Model
+from ai._internals.neuron import Neuron
 
-__all__ = ["Neuron", "Model"]
+__all__ = ["Neuron"]
 
