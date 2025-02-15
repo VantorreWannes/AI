@@ -1,5 +1,5 @@
 import numpy as np
-from _internals._neuron import Neuron
+from ai import Neuron
 from matplotlib import pyplot as plt
 import random
 
