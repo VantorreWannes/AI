@@ -1,7 +1,8 @@
+import random
 import numpy as np
 
 class Neuron:
-    def __init__(self, slope: np.float16, y_intercept: np.float16):
+    def __init__(self, slope: np.float16 = random.random(), y_intercept: np.float16 = random.random()):
         self.slope = slope
         self.y_intercept = y_intercept
 
